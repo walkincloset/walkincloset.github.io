@@ -1,22 +1,89 @@
 body {
-  background-color: #d3905f;
   text-align: center;
   color: #eeeeee;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-#welcome {
-	height: calc(100vh - 16px);
-    display: flex;
+#welcome, #bio, #gamesHeader, .game, #history, #about {
+	display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#bio {
-	height: 10vh;
+#welcome {
+	height: 100vh;
+	background-color: #d3905f;
 }
 
-#people {
+#bio {
+	height: 10vh;
+	background-color: #2a120a;
+}
 
+#gamesHeader {
+	grid-area: gamesHeader;
+}
+
+.gameImage {
+	width: 50px;
+	height: 50px;
+}
+
+.gameImage:hover {
+    filter: brightness(150%);
+}
+
+.game:nth-of-type(1) {
+  grid-area: game1;
+}
+
+.game:nth-of-type(2) {
+  grid-area: game2;
+}
+
+.game:nth-of-type(3) {
+  grid-area: game3;
+  filter: grayscale(100%);
+  font-style: italic;
+}
+
+.game:nth-of-type(4) {
+  grid-area: game4;
+  filter: grayscale(100%);
+  font-style: italic;
+}
+
+.game:nth-of-type(5) {
+  grid-area: game5;
+  filter: grayscale(100%);
+  font-style: italic;
+}
+
+.game:nth-of-type(6) {
+  grid-area: game6;
+}
+
+#games {
+	height: 100vh;
+	background-color: #b5713e;
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    	"gamesHeader gamesHeader gamesHeader gamesHeader gamesHeader"
+    	".           game1       game2       game3       ."
+    	".           game4       game5       game6       ."
+}
+
+#history {
+	height: 30vh;
+	background-color: #411c10;
+}
+
+#about { 
+	height: 5vh;
+	background-color: #8d5831;
 }
