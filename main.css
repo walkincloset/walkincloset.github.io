@@ -1,9 +1,12 @@
 body {
+  background-color: #d3905f;
   text-align: center;
+  color: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #welcome {
-    height: calc(100vh - 16px);
+	height: calc(100vh - 16px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,5 +18,5 @@ body {
 }
 
 #people {
-	
+
 }
