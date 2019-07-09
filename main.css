@@ -84,6 +84,12 @@ body {
 }
 
 #about { 
-	height: 5vh;
+	height: 10vh;
 	background-color: #8d5831;
+	font-size: 5px;
+}
+
+#aboutTwice {
+	color: inherit;
+    text-decoration: none;
 }
