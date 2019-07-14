@@ -86,9 +86,14 @@ body {
 }
 
 #history {
-	height: 30vh;
+	height: 70vmin;
 	background-color: #411c10;
 	font-size: 3vmin;
+}
+
+.historyBody {
+	padding: 20px;
+	text-align: 
 }
 
 #about { 
